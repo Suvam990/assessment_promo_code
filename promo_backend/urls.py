@@ -4,6 +4,6 @@ from promo_app import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include('promo_app.urls')),  # Use your app name here
+    path('api/', include('promo_app.urls')),
      path('', views.home, name='home'),
 ]
