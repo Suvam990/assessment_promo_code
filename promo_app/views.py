@@ -13,6 +13,10 @@ from django.views.decorators.http import require_POST
 def home(request):
     return render(request, 'home.html')
 
+
+def email_preview(request):
+    return render(request, 'email_template.html')
+
 @csrf_exempt
 @require_POST
 def apply_promo(request):
